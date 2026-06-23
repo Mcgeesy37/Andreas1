@@ -3,10 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Andreas Fux — Fotograf</title>
-<meta name="description" content="Andreas Fux — Fotograf. Portfolio, Galerie und Kontakt.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+<title>Andreas Fux — Fotograf Berlin</title>
+<meta name="description" content="Andreas Fux — Fotograf in Berlin. Portfolio, Galerie und Kontakt.">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,6 +14,7 @@
   <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">☰</button>
   <nav class="main-nav" id="mainNav">
     <a href="#about">Über mich</a>
+    <a href="#galerie">Galerie</a>
     <a href="presse.html">Presse</a>
     <a href="#kontakt">Kontakt</a>
     <a href="https://instagram.com/DEIN_INSTAGRAM_NAME" target="_blank" rel="noopener" class="ig-link" aria-label="Instagram">
@@ -57,14 +56,8 @@
     </div>
   </section>
 
-  <section id="galerie" class="gallery-page">
+  <section id="galerie" class="gallery-section">
     <h2 class="section-label">Galerie</h2>
-
-    <!--
-      Bilder einfach in /images/ hochladen und hier als
-      <div class="img-item"><img src="images/DATEINAME.jpg" alt="Beschreibung"></div>
-      ergänzen. Reihenfolge = Reihenfolge im Grid.
-    -->
     <div class="full-grid" id="galleryGrid">
       <div class="img-item"><img src="images/01.jpg" alt="Arbeit 01"></div>
       <div class="img-item"><img src="images/02.jpg" alt="Arbeit 02"></div>
@@ -82,10 +75,10 @@
     <h2>Kontakt</h2>
     <p class="kontakt-intro">Für Anfragen, Aufträge oder Presseanfragen schreiben Sie mir gerne.</p>
 
-    <form action="https://formsubmit.co/DEINE-EMAIL@domain.de" method="POST" class="contact-form">
-      <input type="hidden" name="_subject" value="Neue Nachricht über die Website">
+    <form action="https://formsubmit.co/info@andreas-fux.de" method="POST" class="contact-form">
+      <input type="hidden" name="_subject" value="Neue Nachricht über andreas-fux.de">
       <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://DEINE-DOMAIN.de/index.html#kontakt">
+      <input type="hidden" name="_next" value="https://www.andreas-fux.de/index.html#kontakt">
 
       <label for="name">Name</label>
       <input type="text" id="name" name="Name" required>
@@ -102,7 +95,6 @@
 
 </main>
 
-<!-- Lightbox (kein Fade, nur Ein-/Ausblenden) -->
 <div class="lightbox" id="lightbox">
   <span class="lightbox-close" id="lightboxClose">×</span>
   <img id="lightboxImg" src="" alt="">
@@ -111,8 +103,10 @@
 <footer class="site-footer">
   <p>© <span id="year"></span> Andreas Fux</p>
   <div class="footer-links">
-    <a href="mailto:kontakt@andreasfuchs-fotografie.de">kontakt@andreasfux-fotografie.de</a>
+    <a href="mailto:info@andreas-fux.de">info@andreas-fux.de</a>
     <a href="https://instagram.com/DEIN_INSTAGRAM_NAME" target="_blank" rel="noopener">Instagram</a>
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
   </div>
 </footer>
 
